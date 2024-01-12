@@ -1,0 +1,103 @@
+h2 {
+    text-align: center;
+    background-color: skyblue;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #1d1d1d;
+}
+
+#contenedor {
+    width: 100%;
+    overflow-x: scroll;
+}
+
+table#tablaAtenciones thead tr, table#tablaAtenciones tbody tr {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    font-size: 12px;
+}
+
+.col1 {
+    width: 13%;
+}
+
+.col2 {
+    width: 9%;
+}
+
+.col3 {
+    width: 10%;
+}
+
+.col4 {
+    width: 16%;
+}
+
+.col5 {
+    width: 11%;
+}
+
+.col6 {
+    width: 16%;
+}
+
+.col7 {
+    width: 15%;
+}
+
+.col8 {
+    width: 10%;
+}
+
+.btnCambiar, .btnEliminar{
+    min-width: 40px;
+}
+
+table#tablaAtenciones tbody{
+    display: block;
+    height: 400px;
+    overflow-y: scroll;
+}
+
+/*     */
+
+#txtNombrePaciente, #txtNombreDentista {
+    width: 300px;
+}
+
+#content {
+    display: block;
+    width: 1100px;
+    overflow-x: scroll;
+}
+
+table#tablaAgenda thead tr, table#tablaAgenda tbody tr {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+table#tablaAgenda thead tr th, table#tablaAgenda tbody tr td{
+    width: 150px;
+    text-align: center;
+}
+
+table#tablaAgenda tbody tr td{
+    font-size: 12px;
+    padding: 0;
+}
+
+table#tablaAgenda tbody{
+    display: block;
+    height: 350px;
+    overflow-y: scroll;
+}
+
+table#tablaAgenda thead tr th.column1, table#tablaAgenda tbody tr td.column1 {
+    font-weight: bold;
+}
+
+.btn2{
+    min-width: 10px;
+}

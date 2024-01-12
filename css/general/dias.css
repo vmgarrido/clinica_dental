@@ -1,0 +1,11 @@
+h2 {
+    text-align: center;
+    background-color: skyblue;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #1d1d1d;
+}
+
+.btn {
+    width: 130px;
+}

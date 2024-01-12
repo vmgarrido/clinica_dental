@@ -1,0 +1,43 @@
+h2 {
+    text-align: center;
+    background-color: skyblue;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #1d1d1d;
+}
+
+.errores {
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    -ms-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background: red;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    font-size: 14px;
+    padding: 7px;
+    position: absolute;
+    display: none;
+}
+
+.fech {
+    width: 300px;
+}
+
+#palerta {
+    text-align: center;
+}
+
+#alerta-inicio-horario {
+    background: red;
+    color: white;
+    padding: 5px;
+}
+
+.hora-inicio, .hora-fin, .hora-inicio-actual, .hora-fin-actual {
+    width: 100px;
+}
+
+a.acoredeon, a.acoredeon:hover {
+    text-decoration: none;
+}

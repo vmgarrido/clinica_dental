@@ -1,0 +1,40 @@
+h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    background-color: skyblue;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #1d1d1d;
+}
+
+.errores {
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    -ms-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background: red;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    font-size: 14px;
+    padding: 7px;
+    position: absolute;
+    display: none;
+}
+
+#txtRut, .form-control{
+    width: 270px;
+}
+
+.passNueva {
+    display: none;
+}
+
+#trEsp {
+    color: red;
+    font-weight: bold;
+}
+
+.btn2 {
+    min-width: 10px;
+}

@@ -1,0 +1,157 @@
+h2 {
+    text-align: center;
+    background-color: skyblue;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #1d1d1d;
+}
+
+#txtNombre {
+    width: 400px;
+}
+
+/* Tabla Agenda */
+table#tablaAgenda thead tr, table#tablaAgenda tbody tr {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.col-final {
+    text-align: center;
+}
+
+td.col4 {
+    text-align: center;
+}
+
+table#tablaAgenda tbody{
+    display: block;
+    height: 250px;
+    overflow-y: scroll;
+}
+
+/* Fin Tabla Agenda */
+
+/* Tabla Tratamientos */
+
+#tablaTratamientos thead tr, #tablaTratamientos tbody tr {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.colTr{
+    width: 25%;
+}
+
+#tablaTratamientos tbody{
+    display: block;
+    height: 150px;
+    overflow-y: scroll;
+}
+
+
+
+/* Fin Tabla Tratamientos */
+
+a.acoredeon, a.acoredeon:hover {
+    text-decoration: none;
+}
+
+.btnP {
+    margin-left: 10px;
+}
+
+.btn2{
+    min-width: 20px;
+    min-height: 20px;
+    padding: 0px;
+    font-size: 10px;
+}
+
+/* Tabla Tratamientos Realizados y Sin Realizar */
+table#tablaTratamientoNoRealizado thead tr, table#tablaTratamientoNoRealizado tbody tr,
+table#tablaTratamientoRealizado thead tr, table#tablaTratamientoRealizado tbody tr {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+table#tablaTratamientoNoRealizado tbody, 
+table#tablaTratamientoRealizado tbody{
+    display: block;
+    height: 350px;
+    overflow-y: scroll;
+}
+
+table#tablaTratamientoNoRealizado .col1, table#tablaTratamientoRealizado .col1{
+    width: 35%;
+}
+
+table#tablaTratamientoNoRealizado .col2, table#tablaTratamientoRealizado .col2 {
+    width: 35%;
+}
+
+table#tablaTratamientoNoRealizado .col3,  table#tablaTratamientoRealizado .col3 {
+    width: 15%
+}
+
+table#tablaTratamientoNoRealizado .col4, table#tablaTratamientoRealizado .col4 {
+    width: 15%;
+}
+
+table#tablaTratamientoNoRealizado td.col3,  table#tablaTratamientoRealizado td.col3 {
+    text-align: center;
+}
+
+
+
+
+table#tablaTratamientoNoRealizado tbody tr td, 
+table#tablaTratamientoRealizado tbody tr td,
+table#tabla-trt-historial tbody tr td{
+    padding: 0;
+}
+
+/* Fin Tabla Tratamientos Realizados y Sin Realizar */
+
+/* Inicio Diagnóstico */
+#txtDiagnostico, #m-body{
+    width: 100%;
+    height: 400px;
+    resize: none;
+    padding: 10px;
+}
+/* Fin Diagnóstico */
+
+#tabla-h-trt{
+    height: 350px;
+}
+
+#tabla-historial thead tr, #body-historial tr{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+#tabla-historial thead tr th {
+    width: 230px;
+}
+
+#content {
+    display: block;
+    width: 1100px;
+    overflow-x: scroll;
+}
+
+#body-historial{
+    display: block;
+    height: 450px;
+    overflow-y: scroll;
+}
+
+#body-historial tr td {
+    padding: 3px;
+    width: 230px;
+}

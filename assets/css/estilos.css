@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Preloader */
+#contenedor_carga{
+    background-color: rgba(250, 240, 245, 1);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+    z-index: 10000;
+}
+
+#carga{
+    border: 15px solid #ccc;
+    border-top-color: #7585fa;
+    border-top-style: groove;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    
+    /*centrando*/
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    margin: auto;
+    
+    -webkit-animation: girar 1.5s linear infinite;
+    -moz-animation: girar 1.5s linear infinite;
+    -o-animation: girar 1.5s linear infinite;
+    -ms-animation: girar 1.5s linear infinite;
+    animation: girar 1.5s linear infinite;
+}
+
+@keyframes girar {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+/* Fin Preloader */
+
+body {
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+    background: #d4e4ef;
+}
+
+header {
+    position: fixed;
+    z-index: 500;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding-left: 10px;
+    padding-top: 2px;
+    border-bottom: 4px solid white;
+
+    background: rgba(71, 125, 217, 1);
+    background: -moz-linear-gradient(top, rgba(71, 125, 217, 1) 0%, rgba(33, 180, 226, 1) 41%, rgba(113, 206, 239, 1) 84%, rgba(183, 222, 237, 1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(71, 125, 217, 1)), color-stop(41%, rgba(33, 180, 226, 1)), color-stop(84%, rgba(113, 206, 239, 1)), color-stop(100%, rgba(183, 222, 237, 1)));
+    background: -webkit-linear-gradient(top, rgba(71, 125, 217, 1) 0%, rgba(33, 180, 226, 1) 41%, rgba(113, 206, 239, 1) 84%, rgba(183, 222, 237, 1) 100%);
+    background: -o-linear-gradient(top, rgba(71, 125, 217, 1) 0%, rgba(33, 180, 226, 1) 41%, rgba(113, 206, 239, 1) 84%, rgba(183, 222, 237, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(71, 125, 217, 1) 0%, rgba(33, 180, 226, 1) 41%, rgba(113, 206, 239, 1) 84%, rgba(183, 222, 237, 1) 100%);
+    background: linear-gradient(to bottom, rgba(71, 125, 217, 1) 0%, rgba(33, 180, 226, 1) 41%, rgba(113, 206, 239, 1) 84%, rgba(183, 222, 237, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#477dd9', endColorstr='#b7deed', GradientType=0);
+
+}
+
+header #button-menu {
+    font-size: 20px;
+    color: #a6d2f8;
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 3px;
+    background: white;
+}
+
+.user {
+    color: #1d1d1d;
+    font-size: 16px;
+    margin-right: 10px;
+    background: white;
+    padding:5px;
+    border-radius:10px;
+    font-weight: bold;
+}
+
+.navegacion {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0%;
+    height: 100vh;
+    background: rgba(0, 0, 0, .0);
+
+}
+
+.navegacion ul {
+    width: 320px;
+    height: 100%;
+    background: #fff;
+    list-style: none;
+
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    left: -320px;
+
+    transition: left .3s;
+}
+
+.navegacion .menu li.title-menu {
+    padding: 10px;
+    background: #b5bbbf;
+    color: #fff;
+    text-align: center;
+    font-size: 22px;
+}
+
+.navegacion .menu a {
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid #C6D0DA;
+
+    font-size: 16px;
+    font-weight: 200;
+    text-decoration: none;
+    color: #575D69;
+}
+
+.navegacion .menu a:hover {
+    background: #d9edf7;
+}
+
+.navegacion .menu li span.icon-menu {
+    margin-right: 12px;
+}
+
+.navegacion .menu .item-submenu > a::after {
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: '\f105';
+
+    float: right;
+    color: #C5C5C5;
+}
+
+/* Submenu ============*/
+
+.navegacion .submenu li.title-menu {
+    background: #fff;
+    color: #575D69;
+}
+
+.navegacion .submenu li.go-back {
+    padding: 10px 20px;
+    background: #b5bbbf;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.navegacion .submenu li.go-back::before {
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: '\f0d9';
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 320px) {
+    .navegacion ul {
+        width: 100%;
+    }
+}

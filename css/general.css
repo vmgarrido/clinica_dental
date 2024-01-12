@@ -1,0 +1,60 @@
+/* -- QUITAR EFECTO FOCUS BOOTSTRAP */
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.form-control:focus,
+.uneditable-input:focus {   
+  border-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 .5px .5px rgba(0, 0, 0, 0.1) inset, 0 0 2px rgba(0, 0, 0, 0.5);
+  outline: 0 none;
+}
+
+.form-control, .btn {
+    border-radius: 0px;
+}
+
+.btn {
+    min-width: 130px;
+}
+
+/*--EFECTOS GENERAL -- */
+.boxPrincipal {
+    display: block;
+    width: 1200px;
+    margin: auto;
+    margin-top: 25px;
+    min-height: 500px;
+    overflow: hidden;
+    padding: 10px;
+    background: white;
+}
+
+/* FORMULARIO PERSONA */
+.formPersona {
+    display: flex;
+}
+
+.formulario-persona tr td{
+    padding-right: 10px;
+    padding-bottom: 5px;
+}
+
+#txtRut, #txtRutPaciente, #txtRutDentista{
+    width: 200px;
+}
+
+#txtDv, #txtDvPaciente, #txtDvDentista{
+    width: 40px;
+}

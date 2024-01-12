@@ -1,0 +1,84 @@
+/* -- QUITAR EFECTO FOCUS BOOTSTRAP */
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.form-control:focus,
+.uneditable-input:focus {   
+  border-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 .5px .5px rgba(0, 0, 0, 0.1) inset, 0 0 2px rgba(0, 0, 0, 0.5);
+  outline: 0 none;
+}
+
+.form-control, .btn {
+    border-radius: 0px;
+}
+
+/*--EFECTOS GENERAL -- */
+body {
+    background: #d4e4ef;
+}
+
+#login {
+    display: block;
+    background: white;
+    width: 400px;
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+    margin-top: 100px;
+    overflow: hidden;
+}
+
+#table-login{
+    text-align: right;
+}
+
+table#table-login {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+table#table-login tr td {
+    padding-right: 10px;
+    padding-bottom: 5px;
+}
+
+#txtDv {
+    width: 40px;
+}
+
+.errores {
+    -webkit-boxshadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    -ms-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background: red;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: none;
+    color: #fff;
+    font-size: 14px;
+    padding: 7px;
+    position: absolute;
+}
+
+#mensaje {
+    display: block;
+    background: white;
+    width: 400px;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    overflow: hidden;
+}
